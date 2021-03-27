@@ -7,6 +7,8 @@
  *     TreeNode(int x) { val = x; }
  * }
  */
+// Time: O(N)
+// Space: O(N)
 class Solution {
     TreeNode res;
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
