@@ -3,10 +3,10 @@ public class Solution {
     public int reverseBits(int n) {
         int res = 0;
         int power = 31;
-        while (n != 0) {
-            res = res << power | n & 1;
-            n = n >> 1;
-            power--;
+        for (int i = 0; i < 32; i++) {
+            res <<= 1;
+            res = res | (n & 1);
+            n >>= 1;
         }
         return res;
     }
