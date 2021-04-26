@@ -1,3 +1,4 @@
+//逐个反转字符串中的每一个单词
 class Solution {
     public String reverseWords(String s) {
         if (s.length() <= 1) {
@@ -14,7 +15,7 @@ class Solution {
         }
         StringBuilder sb = new StringBuilder();
         while (left <= right) {
-            char c = s.charA
+            char c = s.charA();
         }
 
         reverseHelper(str, 0, str.length - 1);
